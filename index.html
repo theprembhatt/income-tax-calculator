@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>💰 Alps Insurance - Section 80D Deduction Calculator</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>💡 Alps Insurance - Section 80D Deduction Calculator</h1>
+  </header>
+
+  <main>
+    <form id="deduction-form">
+      <label for="age">🎂 Your Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+
+      <label for="annual-premium-self">💼 Annual Premium for Self and Family:</label>
+      <input type="number" id="annual-premium-self" name="annual-premium-self" placeholder="Enter premium amount" required>
+
+      <label for="annual-premium-parents">👨‍👩‍👧‍👦 Annual Premium for Parents:</label>
+      <input type="number" id="annual-premium-parents" name="annual-premium-parents" placeholder="Enter premium amount" required>
+
+      <label for="income-bracket">💵 Income Bracket:</label>
+      <select id="income-bracket" name="income-bracket" required>
+        <option value="less-than-5-lakh">Less than 5 Lakh</option>
+        <option value="5-lakh-to-10-lakh">5 Lakh to 10 Lakh</option>
+        <option value="more-than-10-lakh">More than 10 Lakh</option>
+      </select>
+
+      <button type="submit">🔢 Calculate</button>
+    </form>
+
+    <div id="result-container" style="display: none;">
+      <p>💸 Total Deductions: <span id="total-deductions"></span></p>
+      <p>💰 Tax Savings: <span id="tax-savings"></span></p>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Alps Insurance</p>
+  </footer>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
